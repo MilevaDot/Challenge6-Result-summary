@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hanken Grotesk", serif;
+}
+
+body {
+    background: hsl(218,100%,96%);
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.section1, .section2 {
+    border-radius: 20px;
+    width: 250px;
+    max-width: 250px;
+}
+
+.section1 {
+    background: hsl(249,92%,60%);
+}
+
+.section1 h2 {
+    text-align: center;
+    margin: 20px;
+    color: hsl(200,20%,68%);
+    font-size: 16px;
+}
+
+.section1 .circle {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsl(249,92%,60%));
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.section1 .circle h1 {
+    font-size: 54px;
+    color: hsl(0, 0%, 100%);
+}
+
+.section1 .circle p {
+    color: hsl(200,20%,68%);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.section1 footer {
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+}
+
+.section1 footer h3 {
+    margin: 20px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.section1 footer p {
+    margin: 0px;
+    padding: 0px 40px 40px 40px;
+    font-size: 12px;
+    color: hsl(200,20%,68%);
+}
+
+.section2 {
+    background: hsl(0, 0%, 100%);
+    padding: 20px;
+}
+
+.section2 h2 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.section2 .points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 14px;
+    font-size: 14px;
+}
+
+.section2 .points .left {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.section2 .points .left p {
+    margin-left: 8px;
+}
+
+.section2 .reaction {
+    background: hsl(353,100%,98%);
+}
+
+.section2 .reaction p {
+    color: hsl(0, 100%, 67%);
+    font-weight: 700;
+}
+
+.section2 .memory p {
+    color: hsl(39, 100%, 56%);
+    font-weight: 700;
+}
+
+.section2 .verbal p {
+    color: hsl(166, 100%, 37%);
+    font-weight: 700;
+}
+
+.section2 .visual p {
+    color: hsl(234, 85%, 45%);
+    font-weight: 700;
+}
+
+.section2 .memory {
+    background: hsl(40,100%,98%);
+}
+
+.section2 .verbal {
+    background: hsl(160,75%,97%);
+}
+
+.section2 .visual {
+    background: hsl(240,100%,98%);
+}
+
+.section2 footer {
+    display: flex;
+    justify-content: center;
+}
+.section2 button {
+    margin-top: 20px;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 50px;
+    background: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+}
+
+.section2 button:hover {
+    cursor: pointer;
+    background: hsl(234, 85%, 45%);
+}
+
+@media (max-width: 375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .section1, .section2 {
+        width: 375px;
+    }
+    .section1 footer h3 {
+        margin: 14px;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    .section1 .circle {
+        width: 120px;
+        height: 120px;
+    }
+    .section1 footer p {
+        font-size: 10px;
+    }
+}
